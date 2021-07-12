@@ -9,7 +9,7 @@ const sass = gulpSass(dartSass);
 
 gulp.task("sass", sassCompiler);
 
-gulp.task("browserSync", function (done) {
+gulp.task("browserSync", function browserInit(done) {
   browserSync.init({
     notify: false,
     server: {
@@ -21,9 +21,9 @@ gulp.task("browserSync", function (done) {
 
 gulp.task(
   "watch",
-  gulp.series("browserSync", "sass", function () {
+  gulp.series("browserSync", "sass", function Watch() {
     gulp.watch("src/scss/**/*.scss", sassCompiler);
-    gulp.watch("src/*.html", { events: "all" }, function (cb) {
+    gulp.watch("src/*.html", { events: "all" }, function HtmlReload(cb) {
       browserSync.reload();
       cb();
     });
