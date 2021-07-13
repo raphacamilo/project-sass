@@ -1,14 +1,12 @@
+@import "../_variables.scss";
+
 .header {
-  position: fixed;
-  width: 100%;
-  z-index: 50;
-  left: 0;
-  top: 0;
-  background-color: #e55461;
-  box-shadow: 0 1px 4px #44444499;
+  border-bottom: 1px solid #44444466;
+  box-shadow: 0 1px 4px #22222266;
   &__content {
-    padding: 0.8em 1.5em;
+    padding: 2em 1.5em;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -18,7 +16,6 @@
   }
   &__item {
     margin-right: 3rem;
-    color: #fff;
     &:last-child {
       margin-right: 0;
     }
@@ -27,16 +24,23 @@
       color: inherit;
       font-weight: bold;
       font-size: 1.2rem;
+      transition: color 0.2s ease;
+      &:hover {
+        color: $red;
+      }
     }
   }
+  &__logo {
+    display: flex;
+    margin-bottom: 2rem;
+  }
   &__title {
-    color: #fff;
     margin-left: 1rem;
     font-size: 4rem;
     font-weight: 900;
     font-style: italic;
   }
-  &__logo {
+  &__img {
     width: 60px;
     height: 60px;
   }
