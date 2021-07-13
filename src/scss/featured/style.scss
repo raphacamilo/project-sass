@@ -1,0 +1,9 @@
+.featured {
+  width: 100%;
+  padding: 100px 0 4rem;
+  &__pokemon {
+    max-width: 350px;
+    width: 100%;
+    filter: drop-shadow(-4px 2px 1px #44444499);
+  }
+}

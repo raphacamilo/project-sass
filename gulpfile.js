@@ -27,6 +27,10 @@ gulp.task(
       browserSync.reload();
       cb();
     });
+    gulp.watch("src/css/**/*.css", { events: "all" }, function CSSReload(cb) {
+      browserSync.reload();
+      cb();
+    });
   })
 );
 
@@ -34,7 +38,7 @@ function sassCompiler() {
   return gulp
     .src("src/scss/**/*.scss")
     .pipe(sass())
-    .pipe(gulp.dest("src/css/"))
+    .pipe(gulp.dest("src/css"))
     .pipe(
       browserSync.reload({
         stream: true,

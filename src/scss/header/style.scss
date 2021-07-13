@@ -1,0 +1,43 @@
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+  left: 0;
+  top: 0;
+  background-color: #e55461;
+  box-shadow: 0 1px 4px #44444499;
+  &__content {
+    padding: 0.8em 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__list {
+    padding: 15px 0;
+    display: flex;
+  }
+  &__item {
+    margin-right: 3rem;
+    color: #fff;
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+  }
+  &__title {
+    color: #fff;
+    margin-left: 1rem;
+    font-size: 4rem;
+    font-weight: 900;
+    font-style: italic;
+  }
+  &__logo {
+    width: 60px;
+    height: 60px;
+  }
+}
