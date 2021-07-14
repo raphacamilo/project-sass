@@ -7,15 +7,17 @@
   transform: translateX(-50%);
   overflow: hidden;
   position: relative;
-  border-radius: 4px;
+  box-shadow: 1px 1px 4px 0 #000;
   position: absolute;
+  transition: opacity 0.5s ease;
 }
 .carousel__img {
   max-width: 1000px;
-  transition: transform 0.3s ease;
+  object-fit: cover;
+  object-position: center;
 }
 .carousel__title {
-  bottom: 30px;
+  bottom: 40px;
   left: 30px;
   position: absolute;
   z-index: 2;
@@ -37,7 +39,7 @@
 .carousel-dots {
   display: flex;
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
   left: 30px;
 }
 .carousel-dots .dot {
@@ -52,6 +54,5 @@
 }
 
 .hidden {
-  visibility: hidden;
   opacity: 0;
 }
