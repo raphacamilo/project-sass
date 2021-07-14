@@ -23,10 +23,10 @@ gulp.task("browserSync", function browserInit(done) {
 gulp.task(
   "watch",
   gulp.series("browserSync", "sass", function Watch() {
-    gulp.watch("src/scss/**/*.scss", sassCompiler);
+    gulp.watch("src/assets/scss/**/*.scss", sassCompiler);
     gulp.watch("src/*.html", { events: "all" }, siteReload);
-    gulp.watch("src/css/**/*.css", { events: "all" }, siteReload);
-    gulp.watch("src/js/**/*.js", { events: "all" }, siteReload);
+    gulp.watch("src/assets/css/**/*.css", { events: "all" }, siteReload);
+    gulp.watch("src/assets/js/**/*.js", { events: "all" }, siteReload);
   })
 );
 
@@ -37,9 +37,9 @@ function siteReload(cb) {
 
 function sassCompiler() {
   return gulp
-    .src("src/scss/**/*.scss")
+    .src("src/assets/scss/**/*.scss")
     .pipe(sass())
-    .pipe(gulp.dest("src/css"))
+    .pipe(gulp.dest("src/assets/css"))
     .pipe(
       browserSync.reload({
         stream: true,

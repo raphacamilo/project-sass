@@ -14,6 +14,7 @@ dotsItem.forEach((e) => {
         dotsItem[i].classList.remove("active");
       }
     }
+
     const carouselItem = carouselItems[dotTarget];
 
     for (let i = 0; i < carouselItems.length; i++) {
