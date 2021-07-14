@@ -1,6 +1,8 @@
+@import "_variables.scss";
+
 body {
   font-family: "Nunito";
-  color: #222222;
+  color: $black_lm;
 }
 
 .main {

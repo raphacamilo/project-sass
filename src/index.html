@@ -10,28 +10,55 @@
       type="image/x-icon"
     />
     <title>PokePédia</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap"
+    />
+    <link rel="stylesheet" href="css/_reset.css" />
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/header/style.css" />
     <link rel="stylesheet" href="css/featured/style.css" />
+    <link rel="stylesheet" href="css/carousel/style.css" />
   </head>
   <body>
     <header class="header">
       <div class="header__content">
-        <div class="header__logo">
-          <img src="assets/img/go.png" alt="" class="header__img" />
-          <h1 class="header__title">PokePédia</h1>
+        <div class="header__logo logo">
+          <img src="assets/img/go.png" alt="" class="logo__img" />
+          <h1 class="logo__title">PokePédia</h1>
         </div>
         <nav class="header__nav">
-          <ul class="header__list">
-            <li class="header__item"><a href="#">Lorem Ipsum</a></li>
-            <li class="header__item"><a href="#">Lorem Ipsum</a></li>
-            <li class="header__item"><a href="#">Lorem Ipsum</a></li>
+          <ul class="header__list list">
+            <li class="list__item"><a href="#">Lorem Ipsum</a></li>
+            <li class="list__item"><a href="#">Lorem Ipsum</a></li>
+            <li class="list__item"><a href="#">Lorem Ipsum</a></li>
+            <li class="list__item"><a href="#">Lorem Ipsum</a></li>
+            <li class="list__item"><a href="#">Lorem Ipsum</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="main">
-      <section class="featured"></section>
+      <section class="featured">
+        <div class="featured__content">
+          <article id="carousel-0" class="carousel">
+            <span class="carousel__mask"></span>
+            <img class="carousel__img" src="assets/img/pokecell.jpg" />
+            <h2 class="carousel__title">Novos pokémons!!</h2>
+          </article>
+
+          <article id="carousel-1" class="carousel hidden">
+            <span class="carousel__mask"></span>
+            <img class="carousel__img" src="assets/img/pokego.jpg" />
+            <h2 class="carousel__title">Pokémon lança novos eventos</h2>
+          </article>
+          <div class="carousel-dots">
+            <div id="dot-0" name="carousel-1" class="dot active"></div>
+            <div id="dot-1" name="carousel-2" class="dot"></div>
+          </div>
+        </div>
+      </section>
     </main>
+    <script src="js/carousel.js"></script>
   </body>
 </html>
