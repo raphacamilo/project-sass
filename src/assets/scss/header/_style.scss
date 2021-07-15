@@ -15,15 +15,14 @@
     display: flex;
     &__item {
       padding: 5px 1.5rem;
-      border-right: 1px solid $black_llo;
-      &:last-child {
-        border-right: 0;
+      &:not(:last-child) {
+        border-right: 1px solid $black_llo;
       }
       a {
         text-decoration: none;
         color: inherit;
         font-weight: bold;
-        font-size: 1.2rem;
+        @include font-size(18px);
         transition: color 0.2s ease;
         &:hover {
           color: $red;
@@ -40,7 +39,7 @@
     border-bottom: 1px solid $black_llo;
     &__title {
       margin-left: 1rem;
-      font-size: 4rem;
+      @include font-size(62px);
       font-weight: 900;
       font-style: italic;
     }

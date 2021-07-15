@@ -3,3 +3,34 @@ $black_ll: #444444;
 $black_lm: #222222;
 $black_llo: #44444466;
 $black_lmo: #22222266;
+
+@mixin carouselWh {
+  max-width: 1100px;
+  height: 550px;
+  width: 100%;
+}
+
+@mixin media-mobile {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+@mixin media-tablet {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @content;
+  }
+}
+@mixin media-desktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin font-size($size) {
+  font-size: calculateRem($size);
+}
+
+@function calculateRem($size) {
+  $math: $size / 16px;
+  $result: $math * 1rem;
+  @return $result;
+}
