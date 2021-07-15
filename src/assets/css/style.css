@@ -1,0 +1,45 @@
+.teams {
+  background-color: #ededed;
+  width: 100%;
+}
+.teams__content {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2.5rem;
+  box-sizing: border-box;
+}
+.teams__title {
+  margin-bottom: 2rem;
+}
+
+.team__title {
+  font-size: 2.625rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.team__img {
+  margin-top: 0.5rem;
+}
+.team__content {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+.team__block {
+  width: 100%;
+}
+.team__block-info {
+  min-height: 50px;
+}
+.team__block-label {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+.team__block-des {
+  color: #22222299;
+  font-size: 0.875rem;
+}

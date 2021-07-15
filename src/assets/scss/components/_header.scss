@@ -22,7 +22,7 @@
         text-decoration: none;
         color: inherit;
         font-weight: bold;
-        @include font-size(18px);
+        @include font-size($fontSizeN);
         transition: color 0.2s ease;
         &:hover {
           color: $red;
@@ -39,7 +39,7 @@
     border-bottom: 1px solid $black_llo;
     &__title {
       margin-left: 1rem;
-      @include font-size(62px);
+      @include font-size($fontSizeXL);
       font-weight: 900;
       font-style: italic;
     }

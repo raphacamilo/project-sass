@@ -23,7 +23,7 @@
     position: absolute;
     z-index: 2;
 
-    @include font-size(34px);
+    @include font-size($fontSizeXM);
     color: #ededed;
     font-weight: bold;
     text-shadow: 1px 1px 1px #44444499;

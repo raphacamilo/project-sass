@@ -1,13 +1,31 @@
+//variables
 $red: #e55461;
 $black_ll: #444444;
 $black_lm: #222222;
 $black_llo: #44444466;
 $black_lmo: #22222266;
+$black_lmox: #22222299;
+
+$gray: #ededed;
+
+$fontSizeXL: 62px;
+$fontSizeL: 42px;
+$fontSizeXM: 32px;
+$fontSizeM: 24px;
+$fontSizeN: 18px;
+$fontSizeS: 16px;
+$fontSizeXS: 14px;
+//End of variables
 
 @mixin carouselWh {
   max-width: 1100px;
   height: 550px;
   width: 100%;
+}
+@mixin defaultWidth($margin: 0 auto) {
+  max-width: 1400px;
+  width: 100%;
+  margin: $margin;
 }
 
 @mixin media-mobile {

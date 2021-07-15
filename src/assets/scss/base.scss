@@ -8,3 +8,10 @@ body {
 .main {
   min-height: 90vh;
 }
+
+.default-title {
+  @include font-size($fontSizeXL);
+  font-weight: bold;
+  text-align: start;
+  width: 100%;
+}
