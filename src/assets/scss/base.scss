@@ -1,5 +1,4 @@
-@import "_variables.scss";
-@import "_reset.scss";
+@import "components/variables", "components/reset";
 
 body {
   font-family: "Nunito";

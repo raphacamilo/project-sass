@@ -1,11 +1,10 @@
-@import "../variables";
+@import "variables";
 
 .carousel {
   @include carouselWh;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-
   overflow: hidden;
   position: relative;
   box-shadow: 1px 1px 4px 0 #000;
