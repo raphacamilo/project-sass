@@ -40,23 +40,23 @@
       <section id="featured-banner" class="featured">
         <div class="featured__content">
           <article id="carousel-0" class="carousel">
-            <span class="carousel__mask"></span>
             <img class="carousel__img" src="assets/img/pokecell.jpg" />
+            <span class="carousel__mask"></span>
             <h2 class="carousel__title">Lançamento de novos Pokémons!!</h2>
           </article>
 
           <article id="carousel-1" class="carousel hidden">
-            <span class="carousel__mask"></span>
             <img class="carousel__img" src="assets/img/pokego.jpg" />
+            <span class="carousel__mask"></span>
             <h2 class="carousel__title">Pokémon lança novos eventos</h2>
           </article>
 
           <article id="carousel-2" class="carousel hidden">
-            <span class="carousel__mask"></span>
             <img
               class="carousel__img"
               src="assets/img/gobattleleague-season1.jpg"
             />
+            <span class="carousel__mask"></span>
             <h2 class="carousel__title">Batalha das Ligas</h2>
           </article>
 
@@ -72,7 +72,10 @@
         <div class="teams__content">
           <h2 id="teams-section" class="teams__title default-title">Times</h2>
           <div class="teams__team-0 team">
-            <h2 class="team__title">Mystic</h2>
+            <div class="team__header">
+              <h2 class="team__title">Mystic</h2>
+              <img src="assets/img/icons/arrow.svg" class="team__arrow" />
+            </div>
             <div class="team__content">
               <div class="team__block">
                 <div class="team__block-info">
@@ -81,7 +84,7 @@
                 </div>
 
                 <img
-                  src="assets/img/mystic-leader.png"
+                  src="assets/img/team/mystic-blanche.png"
                   alt="Mystic Leader"
                   class="team__img"
                 />
@@ -92,7 +95,7 @@
                   <p class="team__block-label">Símbolo</p>
                 </div>
                 <img
-                  src="assets/img/mystic-symbol.png"
+                  src="assets/img/team/mystic-symbol.png"
                   alt="Mystic Symbol"
                   class="team__img"
                 />
@@ -104,7 +107,94 @@
                   <p class="team__block-des">Mascote</p>
                 </div>
                 <img
-                  src="assets/img/mystic-mascot.png"
+                  src="assets/img/team/mystic-articuno.png"
+                  alt="Mystic Mascote"
+                  class="team__img"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="teams__team-1 team">
+            <div class="team__header">
+              <h2 class="team__title">Instinct</h2>
+              <img src="assets/img/icons/arrow.svg" class="team__arrow" />
+            </div>
+            <div class="team__content">
+              <div class="team__block">
+                <div class="team__block-info">
+                  <h3 class="team__block-label">Spark</h3>
+                  <p class="team__block-des">Lider do Time</p>
+                </div>
+
+                <img
+                  src="assets/img/team/instinct_spark.png"
+                  alt="Mystic Leader"
+                  class="team__img"
+                />
+              </div>
+
+              <div class="team__block">
+                <div class="team__block-info">
+                  <p class="team__block-label">Símbolo</p>
+                </div>
+                <img
+                  src="assets/img/team/instinct-symbol.png"
+                  alt="Mystic Symbol"
+                  class="team__img"
+                />
+              </div>
+
+              <div class="team__block">
+                <div class="team__block-info">
+                  <p class="team__block-label">Zapdos</p>
+                  <p class="team__block-des">Mascote</p>
+                </div>
+                <img
+                  src="assets/img/team/instinct-zapdos.png"
+                  alt="Mystic Mascote"
+                  class="team__img"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="teams__team-2 team">
+            <div class="team__header">
+              <h2 class="team__title">Valor</h2>
+              <img src="assets/img/icons/arrow.svg" class="team__arrow" />
+            </div>
+            <div class="team__content">
+              <div class="team__block">
+                <div class="team__block-info">
+                  <h3 class="team__block-label">Candela</h3>
+                  <p class="team__block-des">Lider do Time</p>
+                </div>
+
+                <img
+                  src="assets/img/team/valor_candela.png"
+                  alt="Mystic Leader"
+                  class="team__img"
+                />
+              </div>
+
+              <div class="team__block">
+                <div class="team__block-info">
+                  <p class="team__block-label">Símbolo</p>
+                </div>
+                <img
+                  src="assets/img/team/valor-symbol.png"
+                  alt="Mystic Symbol"
+                  class="team__img"
+                />
+              </div>
+
+              <div class="team__block">
+                <div class="team__block-info">
+                  <p class="team__block-label">Moltres</p>
+                  <p class="team__block-des">Mascote</p>
+                </div>
+                <img
+                  src="assets/img/team/valor-moltres.png"
                   alt="Mystic Mascote"
                   class="team__img"
                 />
@@ -115,5 +205,6 @@
       </section>
     </main>
     <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/teams.js"></script>
   </body>
 </html>

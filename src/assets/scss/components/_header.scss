@@ -1,7 +1,7 @@
 @import "variables";
 
 .header {
-  padding: 2em 0;
+  padding: 1.5em 0;
 
   &__content {
     display: flex;
@@ -32,11 +32,14 @@
   }
 
   & .logo {
+    box-sizing: border-box;
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-bottom: 1.5rem;
+    padding: 0 0.5rem 1.5rem;
     border-bottom: 1px solid $black_llo;
+    align-items: center;
+
     &__title {
       margin-left: 1rem;
       @include font-size($fontSizeXL);
@@ -46,6 +49,37 @@
     &__img {
       width: 60px;
       height: 60px;
+    }
+  }
+  @include media-mobile {
+    .logo {
+      padding-bottom: 1rem;
+    }
+    &__content {
+      align-items: flex-start;
+    }
+    .list {
+      flex-direction: column;
+      align-items: flex-start;
+
+      &__item {
+        &:not(:last-child) {
+          border-right: 0;
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+  @include media-small-mobile {
+    .logo {
+      align-items: center;
+      &__title {
+        @include font-size($fontSizeL);
+      }
+      &__img {
+        width: 40px;
+        height: 40px;
+      }
     }
   }
 }

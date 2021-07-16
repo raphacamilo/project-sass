@@ -21,11 +21,21 @@ $fontSizeXS: 14px;
   max-width: 1100px;
   height: 550px;
   width: 100%;
+
+  @include media-mobile {
+    height: 300px;
+  }
 }
 @mixin defaultWidth($margin: 0 auto) {
   max-width: 1400px;
   width: 100%;
   margin: $margin;
+}
+
+@mixin media-small-mobile {
+  @media screen and (max-width: 400px) {
+    @content;
+  }
 }
 
 @mixin media-mobile {
@@ -46,9 +56,12 @@ $fontSizeXS: 14px;
 @mixin font-size($size) {
   font-size: calculateRem($size);
 }
+@mixin width($size) {
+  width: calculateRem($size);
+}
 
 @function calculateRem($size) {
   $math: $size / 16px;
-  $result: $math * 1rem;
+  $result: $math * 1em;
   @return $result;
 }

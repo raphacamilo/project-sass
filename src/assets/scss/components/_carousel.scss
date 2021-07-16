@@ -6,14 +6,12 @@
   left: 50%;
   transform: translateX(-50%);
   overflow: hidden;
-  position: relative;
   box-shadow: 1px 1px 4px 0 #000;
   position: absolute;
   transition: opacity 0.5s ease;
 
   &__img {
     @include carouselWh;
-    height: auto;
     object-fit: cover;
     object-position: center;
   }
@@ -36,6 +34,14 @@
     top: 0;
     left: 0;
     background-color: #00000099;
+  }
+  @include media-mobile {
+    &__title {
+      left: 10px;
+    }
+  }
+  @include media-small-mobile {
+    font-size: 10px;
   }
 }
 
