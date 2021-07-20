@@ -13,5 +13,4 @@ teams.forEach((e) => {
       teamContent.classList.remove("noVisible");
     }
   });
-  console.log(e.childNodes[3]);
 });
