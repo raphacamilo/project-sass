@@ -1,0 +1,67 @@
+//variables
+$red: #e55461;
+$black_ll: #444444;
+$black_lm: #222222;
+$black_llo: #44444466;
+$black_lmo: #22222266;
+$black_lmox: #22222299;
+
+$gray: #ededed;
+
+$fontSizeXL: 62px;
+$fontSizeL: 42px;
+$fontSizeXM: 32px;
+$fontSizeM: 24px;
+$fontSizeN: 18px;
+$fontSizeS: 16px;
+$fontSizeXS: 14px;
+//End of variables
+
+@mixin carouselWh {
+  max-width: 1100px;
+  height: 550px;
+  width: 100%;
+
+  @include media-mobile {
+    height: 300px;
+  }
+}
+@mixin defaultWidth($margin: 0 auto) {
+  max-width: 1400px;
+  width: 100%;
+  margin: $margin;
+}
+
+@mixin media-small-mobile {
+  @media screen and (max-width: 400px) {
+    @content;
+  }
+}
+
+@mixin media-mobile {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+@mixin media-tablet {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @content;
+  }
+}
+@mixin media-desktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin font-size($size) {
+  font-size: calculateRem($size);
+}
+@mixin width($size) {
+  width: calculateRem($size);
+}
+
+@function calculateRem($size) {
+  $math: $size / 16px;
+  $result: $math * 1em;
+  @return $result;
+}

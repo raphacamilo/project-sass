@@ -1,0 +1,14 @@
+@import "variables";
+
+.featured {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include defaultWidth($margin: 2rem auto 4rem);
+
+  &__content {
+    position: relative;
+    @include carouselWh;
+  }
+}
