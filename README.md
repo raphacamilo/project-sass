@@ -10,14 +10,14 @@ First of all you need to have `node` and `npm` installed on your computer.
 `npm >= 6.x`
 
 Run `npm i` to install the dependencies,  
-Now run `gulp watch` to initialize the localhost.
+Now run `npm start` to initialize the localhost.
 
 Or case you ***don't want*** to do all this just open the index.html in *`src/index.html`*, but the site may not work properly.
 
 ### Gulp
 
 Gulp tasks:
-- "sass" - makes all `.scss` in css minified
+- "sass" - makes all `.scss` in css minified.
 - "watch" - initialize a localhost, and listen to all css, js, html and css files.
 
 ## DevDependencies
