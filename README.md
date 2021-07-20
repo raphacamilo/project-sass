@@ -12,7 +12,7 @@ First of all you need to have `node` and `npm` installed on your computer.
 Run `yarn` to install the dependencies,  
 Now run `gulp watch` to initialize the localhost.
 
-Or case you don't want to do all this just open the index.html in *`src/index.html`*, but the site may not work properly.
+Or case you ***don't want*** to do all this just open the index.html in *`src/index.html`*, but the site may not work properly.
 
 ### Gulp
 
