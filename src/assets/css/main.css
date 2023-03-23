@@ -15,7 +15,7 @@
   padding: 5px 1.5rem;
 }
 .header .list__item:not(:last-child) {
-  border-right: 1px solid #44444466;
+  border-right: 1px solid rgba(68, 68, 68, 0.4);
 }
 .header .list__item a {
   text-decoration: none;
@@ -33,7 +33,7 @@
   display: flex;
   justify-content: center;
   padding: 0 0.5rem 1.5rem;
-  border-bottom: 1px solid #44444466;
+  border-bottom: 1px solid rgba(68, 68, 68, 0.4);
   align-items: center;
 }
 .header .logo__title {
@@ -132,7 +132,7 @@
   font-size: 2em;
   color: #ededed;
   font-weight: bold;
-  text-shadow: 1px 1px 1px #44444499;
+  text-shadow: 1px 1px 1px rgba(68, 68, 68, 0.6);
 }
 .carousel__mask {
   z-index: 1;
@@ -141,7 +141,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #00000099;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 @media screen and (max-width: 767px) {
   .carousel__title {

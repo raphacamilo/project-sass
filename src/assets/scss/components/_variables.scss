@@ -1,3 +1,5 @@
+@use "sass:math";
+
 //variables
 $red: #e55461;
 $black_ll: #444444;
@@ -61,7 +63,7 @@ $fontSizeXS: 14px;
 }
 
 @function calculateRem($size) {
-  $math: $size / 16px;
+  $math: math.div($size, 16px) ;
   $result: $math * 1em;
   @return $result;
 }

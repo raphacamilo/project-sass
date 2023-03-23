@@ -54,7 +54,7 @@
   padding: 1px;
   margin-left: 15px;
   border-radius: 4px;
-  background-color: #22222266;
+  background-color: rgba(34, 34, 34, 0.4);
 }
 .team__img {
   margin-top: 0.5rem;
@@ -82,7 +82,7 @@
   margin-bottom: 0.2rem;
 }
 .team__block-des {
-  color: #22222299;
+  color: rgba(34, 34, 34, 0.6);
   font-size: 0.875em;
 }
 @media screen and (max-width: 767px) {
